@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom left, #fcddf1 0%, #ffd1ff 100%);
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+header{
+    position: relative;
+    max-width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+header .row-header{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+.row-header .row1{
+    position: relative;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row1 .logo{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #f86c86;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.row1 .logo:hover{
+    filter: drop-shadow(0 0 10px #f86c86);
+}
+.row1 ul{
+    display: flex;
+    list-style: none;
+}
+.row1 ul li{
+    padding: 10px 20px;
+    margin: 0px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.row1 ul .active{
+    background: #f86c86;
+}
+.row1 ul .active a{
+    color: #fff;
+}
+.row1 ul li a{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+.row1 ul li:hover{
+    background: #f86c86;
+}
+.row1 ul li:hover a{
+    color: #fff;
+}
+.row-header .dark-night{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.dark-night i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f86c86;
+    color: #f86c86;
+    cursor: pointer;
+}
+section{
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 40px;
+}
+form{
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin-top: 15px;
+    left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+/* form .form{
+    position: relative;
+    padding: 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+} */
+form h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 10px 0px 0px;
+}
+form .form-date{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.form-date input{
+    width: 60px;
+    height: 25px;
+    font-size: 14px;
+    padding: 5px;
+    margin: 0 10px;
+    outline: none;
+}
+form .date{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 15px 0px;
+}
+.day, .month,.year{
+    margin: 0px 5px;
+}
+form .btn{
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background: #f86c86;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background 0.5s ease;
+}
+form .btn:hover{
+    background: #fb3257;
+}
+.imgUser{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.imgUser .userImg{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userImg span{
+    text-align: center;
+}
+.imgUser .userImg input[type="button"]{
+    padding: 8px 0px;
+    width: 80px;
+    border: none;
+    outline: none;
+    background: #f95353;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+.userImg input[type="button"]:hover{
+    background: #ed1c42;
+}
+.userImg input[type="text"]{
+    width: 120px;
+    margin-top: 7px;
+    outline: none;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid #f86c86;
+    text-align: center;
+}
+.boxDate{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+.boxDate h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.items{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.boxDate .items .item{
+    position: relative;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background: #f86c86;
+    margin: 0px 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+.item #itemNumberMonths,#itemNumberDays, #itemNumberHours, #itemNumberMinutes, #itemNumberSeconds{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+}
+.item .itemText{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+.user{
+    position: relative;
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.userItem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userItem .image{
+    position: relative;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ff9292;
+}
+.image span{
+    position: absolute;
+}
+.userItem .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: 10;
+}
+.userItem span{
+    font-size: 21px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 5px;
+}
+.boxheart{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heart{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transform: rotate(45deg);
+    margin-top: 30px;
+}
+.heart::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: red;
+    left: -50%;
+}
+.heart::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: red;
+    top: -50%;
+}
+.boxheart p{
+    position: absolute;
+    z-index: 100;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 22px;
+    transform: translateY(-15px);
+}
+.boxheart span{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 23px;
+}
